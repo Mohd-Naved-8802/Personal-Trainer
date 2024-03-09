@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trainer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>   
+<body>
+    <header class="Header-Wrapper" id="Header">
+        <div class="container-fluid my-container">
+            <!-- NAVBAR START -->
+            <nav id="mynavbar">
+                <div id="logo-Box">
+                    <a href="#" class="navbar-brand">
+                        <img src="Images/personaltrainer3.svg" alt="logo">
+                    </a>
+                </div>
+                
+                <div id="openBtn" onclick="openMenu()">
+                    <span class="fa fa-bars"></span>
+                </div>
+                <!-- Navbar links -->
+                <div id="myMenuBar">
+
+                    <ul class="custom-ul" id="menu">
+                        <li id="closeBtn">
+                            <span class="fa fa-close" onclick="closeMenu()"></span>
+                        </li>
+                        <li><a href="#Banner" class="nav-link my-active" id="home" onclick="home()">Home</a></li>
+                        <li><a href="#Goal" class="nav-link" id="goals" onclick="goals()">Goals</a></li>
+                        <li><a href="#Effects" class="nav-link" id="effects" onclick="effects()">Effects</a></li>
+                        <li><a href="#About" class="nav-link" id="about" onclick="about()">About</a></li>
+                        <li><a href="#Opinion" class="nav-link" id="opinion" onclick="opinion()">Opinion</a></li>
+                        <li><a href="#Plan" class="nav-link" id="plans" onclick="plans()">Plans</a></li>
+                        <li><a href="#Faq" class="nav-link" id="faq" onclick="faq()">FAQ</a></li>
+                        <li><a href="#Contact" class="nav-link" id="contact" onclick="contact()">Contact</a></li>
+
+                        <div class="custom-ulSocial-icon pt-5">
+                            <span>
+                                <a href="#" class="fa fa-skype text-white"></a>
+                            </span>
+                            
+                            <span>
+                                <a href="#" class="fa fa-facebook text-white"></a>
+                            </span>
+                            
+                            <span>
+                                <a href="#" class="fa fa-twitter text-white"></a>
+                            </span>
+                            
+                            <span>
+                                <a href="#" class="fa fa-play text-white"></a>
+                            </span>
+                            
+                            <span>
+                                <a href="#" class="fa fa-linkedin text-white"></a>
+                            </span>
+                            
+                            <span>
+                                <a href="#" class="fa fa-pinterest-p text-white"></a>
+                            </span>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="Group-Section">
+        <!-- ===== BANNER WRAPPER START ===== -->
+        <section class="Banner-Wrapper" id="Banner">
+            <div class="container-fluid my-container">
+                <!-- ===== BANNER TOP CONTENT ===== -->
+                <div class="row banner-topContent">
+                    <div class="col-lg-8">
+                        <div class="banner-leftBox">
+                            <h4 class="title text-white">HI, I'M JOHN</h4>
+                            <h1 class="title primary-color">YOUR PERSONAL  TRAINER</h1>
+                        </div>
+                    </div>
+        
+                    <div class="col-lg-4">
+                        <div class="banner-rightBox">
+                            <figure>
+                                <img src="Images/personaltrainer3-quote1.svg" alt="">
+                            </figure>
+
+                            <p class="text-white">Eget elit phasellus vel, tortor, donec. Nulla diam fusce duis platea.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- ===== BANNER BOTTOM CONTENT ===== -->
+                <div class="row banner-bottomContent">
+                    <div class="col-lg-6">
+                        <div class="banner-bottomLeft">
+                            <p class="text-white">Aliquet pulvinar justo consectetur orci nisl. Duis tristique venenatis eu ut congue justo, maecenas in. Laoreet semper ut.
+                            </p>
+                            <a href="#btn" class="btn btn-lg my-btn">SEE MY PLANS</a>
+                        </div>
+                    </div>
+
+                    <!-- ===== BANNER PROGRESS BAR ===== -->
+                    <div class="col-xl-6 d-flex justify-content-between media-direction">
+                        <div class="progressBar-box">
+                            <div class="progress-bg">
+                                <div class="progress red">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <span class="counter">90</span><span>%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progressBar-box-text">
+                                <p class="text-white">In ultrices odio tincidunt faucibus
+                                </p>
+                            </div>    
+                        </div>
+
+                        <div class="progressBar-box">
+                            <div class="progress-bg">
+                                <div class="progress blue">
+                                    <span class="progress-left">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    
+                                    <span class="progress-right">
+                                        <span class="progress-bar"></span>
+                                    </span>
+                                    <div class="progress-value">
+                                        <span class="counter">37.5</span><span>%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progressBar-box-text">
+                                <p class="text-white">Morbi fermentum sed, congue
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ===== GOAL WRAPPER START ===== -->
+        <section class="Goal-Wrapper" id="Goal">
+            <div class="container-fluid my-container">
+                <div class="row">
+                    <div class="col-lg-12 goal-content">
+                        <div class="goal-content-head">
+                            <h2 class="title">
+                                WHAT IS YOUR
+                                <span class="text-white">GOAL ?</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== GOAL CARDS ===== -->
+                <div class="row row2">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="goal-card goal1">
+                            <div class="goal-cardContent">
+                                <h4 class="title">
+                                    <span class="primary-color">BE</span>
+                                    <span class="text-white">SLIM</span>
+                                </h4>
+
+                                <h3 class="title text-white pt-5 pb-3">WEIGHT LOSS</h3>
+
+                                <a href="#btn" class="btn btn-lg my-btn">SEE MY PLANS</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="goal-card goal2">
+                            <div class="goal-cardContent">
+                                <h4 class="title">
+                                    <span class="primary-color">BE</span>
+                                    <span class="text-white">STURDY</span>
+                                </h4>
+
+                                <h3 class="title text-white pt-5 pb-3">HEALTH STATUS</h3>
+
+                                <a href="#btn" class="btn btn-lg my-btn">SEE MY PLANS</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="goal-card goal3">
+                            <div class="goal-cardContent">
+                                <h4 class="title">
+                                    <span class="primary-color">BE</span>
+                                    <span class="text-white">HUGE</span>
+                                </h4>
+
+                                <h3 class="title text-white pt-5 pb-3">BODY BUILDING</h3>
+
+                                <a href="#btn" class="btn btn-lg my-btn">SEE MY PLANS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- ===== EFFECTS / ABOUT BG START ===== -->
+        <section class="Effects-AboutBg" id="Effects-AboutBg">
+            <!-- EFFECTS WRAPPER -->
+            <section class="container-fluid my-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="Effects-Wrapper" id="Effects">
+                            <div class="effects-head">
+                                <h2 class="title pb-5">
+                                    READY FOR
+                                    <span class="text-white">PROGRESS?</span>
+                                </h2>
+                                
+                                <h4 class="title text-white pt-5 mt-5">WEIGHT LOSS EXAMPLE</h4>
+                                
+                                <h3 class="title text-white text-right">
+                                    <span>+</span><span class="counter">40</span><span>%</span></h3>
+                            </div>
+
+                            <div class="effects-bottom">
+                                <figure>
+                                    <img src="Images/personaltrainer3-diagram.svg" alt="">
+                                </figure>
+
+                                <p class="text-white mb-0">
+                                    <i class="fa fa-info-circle mr-2"></i>
+                                     Aliquet proin magna nisi diam. Phasellus etiam sit odio at aenean. Aliquet tempor tristique erat tempor, quisque in amet.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT WRAPPER / CARDS WRAPPER -->
+            <section class="About-Wrapper" id="About">
+                <div class="container-fluid my-container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="about-text">
+                                <h2 class="title primary-color">JOHN TUCKER</h2>
+
+                                <p class="text-white">
+                                    At id tellus, proin magna leo, morbi mauris, enim pulvinar. Sit pellentesque sem nunc pellentesque. Rhoncus aliquam sit nulla dolor cras scelerisque. Dolor scelerisque dictum scelerisque posuere egestas. In phasellus consequat odio quis at. Ornare.</p>
+                            </div>
+                        </div>
+                        
+                        <!-- ABOUT PROGRESS BAR -->
+                        <div class="col-xl-6 d-flex justify-content-between about-progressBox media-direction">
+                            <div class="progressBar-box aboutpBox">
+                                <div class="progress-bg">
+                                    <div class="progress red">
+                                        <span class="progress-left">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        
+                                        <span class="progress-right">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <span class="counter">90</span><span>%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progressBar-box-text">
+                                    <p class="text-white">Effectiveness</p>
+                                </div>    
+                            </div>
+
+                            <div class="progressBar-box aboutpBox">
+                                <div class="progress-bg">
+                                    <div class="progress blue">
+                                        <span class="progress-left">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        
+                                        <span class="progress-right">
+                                            <span class="progress-bar"></span>
+                                        </span>
+                                        <div class="progress-value">
+                                            <span class="counter">37.5</span><span>%</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="progressBar-box-text">
+                                    <p class="text-white">Progress</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ABOUT SOCIAL LINK -->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="about-iconBox d-flex">
+                                <div class="icon-text">
+                                    <p class="title text-white">Follow me:</p>
+                                </div>
+
+                                <div class="about-linksContainer">
+                                    <div class="about-linksBox linksBox1">
+                                    <a href="#fb">
+                                        <img src="Images/personaltrainer3-social1.svg" class="show" alt="">
+                                    </a>
+                                </div>
+                                
+                                <div class="about-linksBox linksBox2">
+                                    <a href="#insta">
+                                        <img src="Images/personaltrainer3-social2.svg" alt="">
+                                        
+                                    </a>
+                                </div>
+                                
+                                <div class="about-linksBox linksBox3">
+                                    <a href="#in">
+                                        <img src="Images/personaltrainer3-social3.svg" alt="">
+                                        
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- ===== CARDS WRAPPER START ===== -->
+        <section class="Cards-Wrapper" id="Cards">
+            <div class="container-fluid my-container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card-box text-center">
+                            <figure>
+                                <img src="Images/personaltrainer3-icon1.svg" alt="">
+                            </figure>
+
+                            <h4 class="title text-white pt-5 pb-3">WEIGHT LIFTING</h4>
+                            <p class="light-text">Urna at amet dignissim odiomi amet mi pharetra.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card-box text-center">
+                            <figure>
+                                <img src="Images/personaltrainer3-icon2.svg" alt="">
+                            </figure>
+
+                            <h4 class="title text-white pt-5 pb-3">CARDIO TRAINING</h4>
+                            <p class="light-text">Nulla quis justo. Proin dui aliquam eget, ante insis.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card-box text-center">
+                            <figure>
+                                <img src="Images/personaltrainer3-icon3.svg" alt="">
+                            </figure>
+
+                            <h4 class="title text-white pt-5 pb-3">FLEX TRAINING</h4>
+                            <p class="light-text">Quisque nec sem nunc accumsan placerat eget.</p>
+                        </div>
+                    </div>  
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div class="card-box text-center">
+                            <figure>
+                                <img src="Images/personaltrainer3-icon4.svg" alt="">
+                            </figure>
+
+                            <h4 class="title text-white pt-5 pb-3">WORKOUT PLAN</h4>
+                            <p class="light-text">Suspendisse dignissim in, consequat, auguereto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        
+        
+        <!-- ===== OPINION WRAPPER START ===== -->
+        <div class="container-fluid my-container">
+            <section class="Opinion-Wrapper" id="Opinion">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="opinion-boxLeft">
+                            <h2 class="title">
+                                <span class="counter dark-text">3000</span></h2>
+                            <h3 class="title text-white">SATISFIED CUSTOMERS</h3>
+                            <p class="text-white">At id tellus, proin magna leo, morbi mauris, enim pulvinar. Sit pellentesque sem nunc pellentesque.</p>
+                        </div>
+                    </div>
+                    <!-- OPINION TESTMONI 1 -->
+                    <div class="col-xl-3">
+                        <div class="opinion-testimonialBox text-center">
+                            <div class="testimoni_qoutes">
+                                <figure class="figure1 text-right">
+                                    <img src="Images/personaltrainer3-quote2.svg" alt="">
+                                </figure>
+                            </div>
+                            
+                            <figure class="figure2">
+                                <img src="Images/personaltrainer3-testimonials1.webp" alt="">
+                            </figure>
+
+                            <p class="py-5">Eget convallis felis, aliquam convallis condimentum nisl vestibulum. Urna, sit volutpat nisi, vulputate.</p>
+
+                            <h4 class="title dark-text">JAMES HILL</h4>
+                            <h5 class="title primary-color pt-4 pb-3">30 years</h5>
+                        </div>
+                    </div>
+                    
+                    <!-- OPINION TESTMONI 2 -->
+                    <div class="col-xl-3">
+                        <div class="opinion-testimonialBox text-center">
+                            <div class="testimoni_qoutes">
+                                <figure class="figure1 text-right">
+                                    <img src="Images/personaltrainer3-quote2.svg" alt="">
+                                </figure>
+                            </div>
+                            
+                            <figure class="figure2">
+                                <img src="Images/personaltrainer3-testimonials2.webp" alt="">
+                            </figure>
+
+                            <p class="py-5">Amet pellentesque eget adipiscing habitasse consectetur leo elementum. Vitae imperdiet nulla ac in leo.</p>
+
+                            <h4 class="title dark-text">MILLA COLL</h4>
+                            <h5 class="title primary-color pt-4 pb-3">26 years</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        
+        <!-- ===== CLIENTS / PLAN BG START ===== -->
+        <section id="Clients-PlanBg">
+            <!-- ===== CLIENTS WRAPPER START ===== -->
+            <section class="Clients-Wrapper" id="Clients">
+                <div class="container-fluid my-container">
+                    <h2 class="title">
+                        <span class="text-white d-block">MY CLIENTS</span>
+                        AND THEIR EFFECTS
+                    </h2>
+
+                    <div class="row client-cards-container">
+                        <!-- ===== CLIENT LOGO ===== -->
+                        <div class="col-md-6  col-xl-3">
+                            <div class="client-logo">
+                                <figure class="figure1">
+                                    <img src="Images/personaltrainer3-pic4.svg" alt="">
+                                </figure>
+                            </div>
+                        </div>
+
+                        <!-- ===== CLIENT BOX ===== -->
+                        <div class="col-md-6  col-xl-3">
+                            <div class="client-box text-white">
+                                <figure><img src="Images/personaltrainer3-pic5.webp" alt=""></figure>
+                                <h4 class="title pt-5">DARRELL STEWARD</h4>
+                                <p class="pt-3">At id tellus, proin magna leo</p>
+                            </div>
+                        </div>
+                        
+                        <!-- ===== CLIENT BOX ===== -->
+                        <div class="col-md-6  col-xl-3">
+                            <div class="client-box text-white">
+                                <figure><img src="Images/personaltrainer3-pic6.webp" alt=""></figure>
+                                <h4 class="title pt-5">ELEANOR PENA</h4>
+                                <p class="pt-3">At id tellus, proin magna leo</p>
+                            </div>
+                        </div>
+                       
+                        <!-- ===== CLIENT BOX ===== -->
+                        <div class="col-md-6  col-xl-3">
+                            <div class="client-box text-white">
+                                <figure><img src="Images/personaltrainer3-pic7.webp" alt=""></figure>
+                                <h4 class="title pt-5">DIANNE RUSSELL</h4>
+                                <p class="pt-3">At id tellus, proin magna leo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <!-- ===== PLAN WRAPPER START ===== -->
+            <section class="Plan-Wrapper" id="Plan">
+                <div class="container-fluid my-container">
+                    <h2 class="title">
+                        <span class="text-white">CHOOSE A PACKAGE</span>
+                        FOR YOURSELF
+                    </h2>
+
+                    <div class="row plan-card-container">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="pricing-box box1">
+                                <div class="pricing-header">
+                                    <h2 class="title text-white">BASIC</h2>
+
+                                        <div class="price pt-4">
+                                            <sup class="currency mr-2">$</sup>
+                                            <span class="counter">39</span>
+                                        </div>
+
+                                    <hr class="primary-color">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                </div>
+
+                                <div class="pricing-bottom">
+                                    <ul>
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Morbi tempor et
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Vehicula dolor fin
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Vitae eros fermet
+                                            </span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <a href="#btn" class="btn btn-lg my-btn">BUY NOW</a>
+                            </div>
+                        </div>
+                       
+                        <div class="col-md-6 col-xl-4">
+                            <div class="pricing-box box2">
+                                <div class="pricing-header">
+                                    <h2 class="title text-white">PROFESSIONAL</h2>
+
+                                        <div class="price pt-4">
+                                            <sup class="currency mr-2">$</sup>
+                                            <span class="counter">59</span>
+                                        </div>
+
+                                    <hr class="dark-text bg-dark">
+
+                                    <p>Quisque nec sem nunc, accumsan placerat eget, ligula. </p>
+                                </div>
+
+                                <div class="pricing-bottom">
+                                    <ul>
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Morbi tempor et
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Vehicula dolor fin
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Vitae eros fermet
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <a href="#btn" class="btn btn-lg my-btn">BUY NOW</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-xl-4">
+                            <div class="pricing-box box3">
+                                <div class="pricing-header">
+                                    <h2 class="title text-white">ADVANCED</h2>
+
+                                        <div class="price pt-4">
+                                            <sup class="currency mr-2">$</sup>
+                                            <span class="counter">89</span>
+                                        </div>
+
+                                    <hr class="primary-color">
+
+                                    <p>Cum sociis natoque penatibus et lectus. Curabitur ut lacus</p>
+                                </div>
+
+                                <div class="pricing-bottom">
+                                    <ul>
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Morbi tempor et
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Vehicula dolor fin
+                                            </span>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="icon fa fa-dot-circle-o"></span>
+                                            <span class="text">Vitae eros fermet
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <a href="#btn" class="btn btn-lg my-btn">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        
+        <!-- ===== FAQ WRAPPER START ===== -->
+        <section class="Faq-Wrapper" id="Faq">
+            <div class="container-fluid my-container pl-0 pr-0">
+                <div class="row ml-0 mr-0">
+                    <div class="col-lg-6 pl-0 pr-0 my-col">
+                        <div class="faq-imgBox media-imgBox">
+                        </div>
+                    </div>
+                    <!-- FAQ TEXT -->
+                    <div class="col-lg-6 pl-0 pr-0 my-col">
+                        <div class="faq-container d-flex">
+                            <div class="faq-content">
+                                <h2 class="title primary-color">FAQ</h2>
+                                
+                                    <div class="faq-textBox text-white">
+                                        <h5 class="question">                                          <span>1</span>
+                                            Consequat in proin at ultrices vitae sapien sagittis proin.
+                                            <i class="fa fa-plus"></i>
+                                        </h5>
+                                    </div>
+
+                                    <div class="faq-textBox text-white d-flex">
+                                        <h5 class="title">                                          <span>2</span>
+                                            Luctus egestas auctor mattis tellus sed fermentum ac.
+                                            <i class="fa fa-plus"></i>
+                                        </h5>
+                                    </div>
+
+                                    <div class="faq-textBox text-white d-flex">
+                                        <h5 class="title">                                          <span>3</span>
+                                            Elementum lorem pellentesque facilisis arcu.
+                                            <i class="fa fa-plus"></i>
+                                        </h5>
+                                    </div>
+                                    
+                                    <div class="faq-textBox text-white d-flex">
+                                        <h5 class="title">                                          <span>4</span>
+                                            Sit sollicitudin quis ut adipiscing elit odio donec.
+                                            <i class="fa fa-plus"></i>
+                                        </h5>
+                                    </div>
+                                    
+                                    <div class="faq-textBox text-white d-flex">
+                                        <h5 class="title">                                          <span>5</span>
+                                            Orci tempor aliquam quam facilisis at. Sit risus justo.
+                                            <i class="fa fa-plus"></i>
+                                        </h5>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- ===== CONTACT WRAPPER START ===== -->
+        <section class="Contact-Wrapper" id="Contact">
+            <div class="container-fluid my-container">
+                <div class="row">
+                    <!-- contact text -->
+                    <div class="col-xl-8">
+                        <div class="contact-text text-white">
+                            <h2 class="title text-white">CONTACT ME</h2>
+
+                            <div class="address-box d-flex">
+                                <figure>
+                                    <img src="Images/personaltrainer3-logo.svg" alt="">
+                                </figure>
+
+                                <div class="address">
+                                    <p class="mb-0">Level 13, 2 Elizabeth St,
+                                        Melbourne, Victoria 3000, Australia</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-details">
+                                <h3 class="title">
+                                    <a href="#number" class="text-white text-decoration-none d-block">+61 (0) 3 8376 6284</a>
+                                    <a href="#no-reply" class="text-white text-decoration-none d-block">noreply@Rk.com</a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- contact form -->
+                    <div class="col-xl-4">
+                        <form action="#">
+                            <h4 class="title text-white">HAVE A QUESTION? WRITE TO US</h4>
+
+                            <div class="form-content">
+                                <div class="form-itemBox">
+                                    <input type="text" name="your_name" placeholder="Full name *" required>
+                                </div>
+                                
+                                <div class="form-itemBox">
+                                    <input type="tel" name="your_phone" placeholder="Phone *" required>
+                                </div>
+                                
+                                <div class="form-itemBox">
+                                    <input type="email" name="your_email" placeholder="Email address *" required>
+                                </div>
+                                
+                                <div class="form-itemBox">
+                                    <textarea name="your-message" id="" cols="40" rows="0" placeholder="Your message..."></textarea>
+                                </div>
+
+                                <div class="check-itemBox pt-2">
+                                    <label for="accept">
+                                        <input type="checkbox" name="Acceptance" id="accept" required>
+                                        <span class="text-white">I consent to the processing of data for the purpose of telephone contact. *</span>
+                                    </label>
+                                </div>
+                                
+                                <a href="#" class="d-inline">
+                                    <button type="submit" class="btn btn-lg my-btn">Send a message</button>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FOOTER START ===== -->
+        <footer class="text-center">
+            <div class="container-fluid my-container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="text-white">&copy; 2024 Betheme Created by <a href="#Md-Naved" class="text-white text-decoration-none">Mohd Naved</a> | All Rights Reserved | Powered by <a href="#Md-Naved" class="text-white text-decoration-none">Bootstrap</a></p>
+                        
+                        <div class="footer-socialIcon pt-3">
+                            <a href="#skype"><span class="fa fa-skype text-white"></span></a>
+                            <a href="#fb"><span class="fa fa-facebook text-white"></span></a>
+                            <a href="#twitter"><span class="fa fa-twitter text-white"></span></a>
+                            <a href="#play"><span class="fa fa-play text-white"></span></a>
+                            <a href="#in"><span class="fa fa-linkedin text-white"></span></a>
+                            <a href="#pin"><span class="fa fa-pinterest-p text-white"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery Cdn for Counter -->
+    <script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- Counter Js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <!-- Counter File -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
