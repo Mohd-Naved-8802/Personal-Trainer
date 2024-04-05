@@ -1,0 +1,1581 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Syne:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+/* ========CSS Variables======= */
+:root {
+  --primary-color: #fc5830;
+  --dark-bg-color: #1c1c1a;
+  --dark-grey-color: #232321;
+  --light-grey-color: #595959;
+  --text-light-color: #bcbdbf;
+}
+
+/* ======My Utility Classes==== */
+.my-container {
+  padding-inline: 13rem;
+}
+
+.my-active {
+  color: var(--primary-color) !important;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+.light-text {
+  color: var(--text-light-color);
+}
+
+.dark-text {
+  color: #1c1c1a;
+}
+
+.my-btn {
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #000000;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  padding: 1.5rem 4rem;
+  border-radius: 8px;
+  border-color: transparent;
+  transition: 0.1s ease;
+}
+
+.my-btn:hover {
+  color: #fff;
+  background-color: var(--dark-bg-color);
+}
+
+img {
+  width: 100%;
+}
+
+h2,
+h2 span {
+  font-size: 9rem;
+  font-family: "Syne", sans-serif !important;
+  font-weight: 700;
+  color: var(--light-grey-color);
+}
+
+h3 {
+  font-size: 5rem;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 2.4rem;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+/* ====== HEADER WRAPPER START ====== */
+.Header-Wrapper{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #363636;
+  z-index: 2;
+  box-shadow: 0 4px 2px -2px rgba(53, 53, 53, 0.3);
+}
+
+nav {
+  width: 100%;
+  padding-inline: 0rem !important;
+  padding-block: 1.5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-Box{
+  display: inline-block;
+}
+
+#logo-Box a.navbar-brand {
+  width: 55%;
+  margin-top: 1rem;
+}
+
+#myMenuBar{
+  float: right;
+}
+
+.custom-ul li{
+  display: inline-block;
+}
+
+.custom-ul li a.nav-link{
+  font-size: 1.8rem;
+  padding-inline: 2rem !important;
+  color: #fff;
+  font-weight: 500;
+}
+
+.custom-ul li a.nav-link:hover {
+  color: var(--primary-color);
+}
+
+#openBtn{
+  width:82%;
+  text-align: right;
+  float: right;
+  color:var(--primary-color);
+}
+
+#openBtn, #closeBtn{
+  font-size: 2.7rem;
+  cursor: pointer;
+  display: none;
+}
+
+.custom-ulSocial-icon {
+  display: none;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.custom-ulSocial-icon span a {
+  font-size: 18px;
+  transition: 0.3s ease;
+  padding-inline: 0.5rem;
+  margin-inline: 0.5rem;
+}
+
+.custom-ulSocial-icon span a:hover {
+  text-decoration: none;
+  color: var(--primary-color) !important;
+}
+/* ====== HEADER WRAPPER END ====== */
+
+/* ====== BANNER WRAPPER START ====== */
+.Banner-Wrapper {
+  width: 100%;
+  background-color: var(--dark-grey-color);
+  background-image: url("../Images/personaltrainer3-section-bg1.webp");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 10rem;
+}
+
+/* BANNER TOP CONTENT */
+.banner-topContent {
+  padding-bottom: 4rem;
+}
+
+.banner-leftBox h1.title {
+  font-size: 11.5rem;
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+  line-height: 11rem;
+  padding-top: 1.9rem;
+}
+
+.banner-rightBox {
+  width: 48%;
+  position: absolute;
+  right: 0px;
+}
+
+.banner-rightBox figure img {
+  width: 32px;
+}
+
+.banner-rightBox p {
+  line-height: 2.7rem;
+  padding-top: 0.5rem;
+}
+
+/* BANNER BOTTOM CONTENT */
+.banner-bottomContent {
+  width: 100%;
+  border-top: 1px solid #363636;
+  padding-top: 4.5rem;
+}
+
+.banner-bottomLeft p {
+  line-height: 3rem;
+}
+
+.banner-bottomLeft .my-btn {
+  margin-top: 5rem;
+}
+
+/* BANNER BOTTOM RIGHT */
+.progressBar-box {
+  width: 48%;
+  height: fit-content;
+  background-color: var(--dark-bg-color);
+  border-radius: 2rem;
+  text-align: center;
+  padding-block: 2rem;
+  margin-top: 0.8rem;
+}
+
+/* BANNER BOTTOM RIGHT PROGRESS BAR */
+.progress-bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  width: 150px;
+  height: 150px !important;
+  float: left;
+  line-height: 150px;
+  background: none;
+  margin: 20px;
+  box-shadow: none;
+  position: relative;
+}
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50.1%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 4.9px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #000;
+  font-size: 24px;
+  color: #fff;
+  line-height: 135px;
+  text-align: center;
+  /* position: absolute; */
+  /* top: 5%; */
+  /* left: 5%; */
+}
+
+.progress.red .progress-bar {
+  border-color: var(--primary-color);
+}
+
+.progress.red .progress-left .progress-bar {
+  animation: loading-2 1s linear forwards 1.8s;
+}
+
+.progress.blue .progress-bar {
+  border-color: #049dff;
+}
+
+.progress.blue .progress-right .progress-bar {
+  animation: loading-3 1.8s linear forwards;
+}
+
+.progress.blue .progress-left .progress-bar {
+  animation: none;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}
+
+.progressBar-box-text {
+  width: 74%;
+  margin: 0px auto;
+}
+
+.progressBar-box-text p {
+  font-size: 2.04rem;
+}
+/* ===== BANNER WRAPPER END =====  */
+
+.Group-Section {
+  width: 100%;
+  background-color: var(--dark-bg-color);
+}
+
+/* ===== GOAL WRAPPER START ===== */
+.Goal-Wrapper {
+  width: 100%;
+  background-image: url("../Images/personaltrainer3-section-bg2.webp");
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+}
+
+.goal-content-head h2.title {
+  width: 60%;
+  line-height: 9.7rem;
+}
+
+/* GOAL  CARD */
+.goal-card {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30rem 4rem 4rem;
+  border-radius: 3rem;
+  filter:grayscale(100%);
+}
+
+.goal-card:hover {
+  filter:grayscale(0%);
+}
+
+.goal-card h4.title .primary-color {
+  padding-bottom: 1.5rem;
+  border-bottom: solid var(--primary-color);
+}
+
+.Goal-Wrapper .row2 {
+  padding-top: 8rem;
+}
+
+.goal1 {
+  background-image: url("../Images/personaltrainer3-pic1.webp");
+}
+
+.goal2 {
+  background-image: url("../Images/personaltrainer3-pic2.webp");
+}
+
+.goal3 {
+  background-image: url("../Images/personaltrainer3-pic3.webp");
+}
+
+.goal-cardContent h3.title {
+  font-size: 4rem !important;
+}
+
+/* ===== EFFECTS ABOUT BG START =====  */
+.Effects-AboutBg {
+  width: 100%;
+  background: linear-gradient(0deg, #232321 92%, #1c1c1a 92%);
+  padding-top: 5rem;
+  bottom: 10rem;
+}
+
+/* EFFECTS WRAPPER */
+.Effects-Wrapper {
+  width: 100%;
+  background-color: #bcbdbf;
+  background-image: url("../Images/personaltrainer3-wrap-bg1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 3rem;
+}
+
+.effects-head {
+  padding: 5rem 8rem 0rem;
+}
+
+.effects-bottom p {
+  padding-left: 8rem;
+  padding-bottom: 5rem;
+}
+
+/* ABOUT WRAPPER */
+.About-Wrapper {
+  width: 100%;
+  background-image: url("../Images/personaltrainer3-section-bg3.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+.about-text {
+  padding-top: 28rem;
+}
+
+.about-text h2.title {
+  font-size: 9.9rem;
+}
+
+.about-text p {
+  width: 60%;
+  padding-top: 3rem;
+}
+
+.about-progressBox {
+  padding-top: 49rem;
+}
+
+.about-iconBox {
+  width: 55%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-linksContainer {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-text {
+  width: 40%;
+}
+
+.about-linksBox {
+  width: 45px;
+}
+
+.about-linksBox a img {
+  transition: 0.2s ease-in;
+}
+
+.about-linksBox a img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== CARDS WRAPPER START ===== */
+.Cards-Wrapper {
+  padding-block: 10rem;
+}
+
+.Cards-Wrapper .card-box {
+  width: 100%;
+  background-color: var(--dark-grey-color);
+  border-radius: 1.5rem;
+  padding: 2rem 4rem;
+  transition: 0.1s ease;
+}
+
+.card-box figure {
+  width: 35%;
+  margin: 0px auto;
+}
+
+.card-box h4.title {
+  line-height: 3.7rem;
+}
+
+.Cards-Wrapper .card-box:hover {
+  background-color: #2f2f2c;
+  transform: scale(1.03);
+}
+
+/* ===== OPINION WRAPPER START ===== */
+.Opinion-Wrapper {
+  background-color: var(--primary-color);
+  border-radius: 3rem;
+  padding: 6rem;
+}
+
+.opinion-boxLeft {
+  padding-top: 7rem;
+}
+.opinion-boxLeft p {
+  width: 80%;
+}
+
+.opinion-testimonialBox {
+  background-color: #fff;
+  border-radius: 3rem;
+  padding: 0rem 2.7rem 3rem;
+}
+
+.testimoni_qoutes {
+  position: relative;
+  top: -15px;
+}
+.testimoni_qoutes .figure1 img {
+  width: 34px;
+}
+
+.opinion-testimonialBox .figure2 {
+  width: 86px;
+  margin: 0px auto;
+}
+
+.opinion-testimonialBox .figure2 img {
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+
+.opinion-testimonialBox .figure2 img:hover {
+  filter: none;
+}
+
+.opinion-testimonialBox p {
+  width: 97%;
+  margin: 0px auto;
+  line-height: 2.7rem;
+}
+
+.opinion-testimonialBox h5.title {
+  font-size: 1.8rem;
+}
+
+/* ===== CLIENTS WRAPPER START =====  */
+#Clients-PlanBg {
+  width: 100%;
+  background-color: var(--dark-grey-color);
+  margin-top: 10rem;
+}
+
+.Clients-Wrapper {
+  padding-block: 10rem;
+}
+
+/* client-cards-container */
+.client-cards-container {
+  padding-top: 10rem;
+}
+
+.client-logo,
+.client-logo .figure1 {
+  width: 100%;
+}
+
+/* client box */
+.client-box {
+  transition: 0.2s ease;
+}
+
+.client-box,
+.client-box figure {
+  width: 100%;
+}
+
+.client-box figure {
+  border-radius: 3rem;
+}
+
+.client-box figure img {
+  border-radius: 3rem;
+}
+
+.client-box h4.title {
+  width: 75%;
+  line-height: 3.5rem;
+}
+
+.client-box:hover {
+  transform: translateY(-10px);
+}
+
+/* ===== PLAN WRAPPER START ===== */
+.Plan-Wrapper {
+  background-image: url("../Images/personaltrainer3-section-bg5.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-bottom: 12rem;
+}
+
+.plan-card-container {
+  padding-top: 23.6rem;
+}
+
+.pricing-box {
+  width: 100%;
+  border-radius: 3rem;
+  padding: 4rem 4rem 6rem;
+  color: #fff;
+}
+
+.pricing-box.box1 {
+  background-color: var(--dark-bg-color);
+}
+
+.pricing-box.box2 {
+  background-color: var(--primary-color);
+}
+
+.pricing-box.box3 {
+  background-color: var(--light-grey-color);
+}
+
+.pricing-header h2.title {
+  font-size: 2.5rem;
+}
+
+.price span {
+  font-size: 4.3rem;
+  color: #fff;
+  font-family: "Barlow", sans-serif !important;
+  font-weight: 500;
+}
+
+.price .currency {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+
+.pricing-header hr {
+  width: 60%;
+  display: block;
+  background-color: var(--primary-color);
+}
+
+.pricing-header p {
+  font-size: 2rem;
+  padding-top: 2rem;
+}
+
+.pricing-bottom {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.pricing-bottom ul {
+  list-style: none;
+}
+
+.pricing-bottom ul li {
+  font-size: 1.6rem;
+  padding: 1.1rem 1rem 0rem;
+  display: table;
+}
+
+.pricing-bottom ul li span.icon {
+  display: table-cell;
+  width: 40px;
+}
+
+.pricing-bottom ul li span.text {
+  display: table-cell;
+}
+
+/* ===== FAQ WRAPPER START =====  */
+.Faq-Wrapper {
+  width: 100%;
+  background-color: var(--dark-grey-color);
+}
+
+.Faq-Wrapper .my-col {
+  height: fit-content;
+}
+
+.faq-imgBox {
+  width: 100%;
+  background-color: var(--dark-bg-color);
+  background-image: url("../Images/personaltrainer3-section-bg4.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  padding-block: 44.4rem;
+}
+
+.faq-container {
+  padding: 17rem 0rem 0rem;
+  justify-content: center;
+}
+
+.faq-content {
+  width: 65%;
+  margin: 0px auto;
+}
+
+.faq-content h2.title {
+  font-size: 13.6rem;
+  padding-bottom: 5rem;
+}
+
+.faq-textBox {
+  background-color: #272725;
+  margin-bottom: 5px;
+  padding: 2rem 3rem 2rem 6rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-textBox h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.faq-textBox h5 span {
+  position: absolute;
+  left: 2rem;
+  font-weight: 700;
+}
+
+.faq-textBox h5 i {
+  font-size: 11px;
+  color: var(--dark-bg-color);
+  position: absolute;
+  right: 2rem;
+  bottom: 2.8rem;
+}
+
+/* ===== CONTACT WRAPPER START =====  */
+.Contact-Wrapper {
+  width: 100%;
+  background-color: var(--primary-color);
+  background-image: url("../Images/personaltrainer3-section-bg6.webp");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top right;
+  padding-block: 10rem;
+}
+
+.address-box {
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0rem 3rem;
+}
+
+.address-box figure {
+  width: 140px;
+}
+
+.address {
+  width: 65%;
+}
+
+.address p {
+  width: 73%;
+}
+
+.contact-details h3 a {
+  font-family: "Syne", sans-serif !important;
+  margin-top: 1rem;
+}
+
+/* FORM START */
+.form-content {
+  padding-top: 3.5rem;
+  padding-left: 1.5rem;
+}
+
+.form-itemBox {
+  padding-top: 1rem;
+}
+
+.form-itemBox input,
+.form-itemBox textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 1rem 1rem 1rem;
+  resize: none;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #fff;
+}
+
+.form-itemBox textarea {
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+.form-itemBox textarea::-webkit-resizer {
+  display: none;
+}
+
+.form-itemBox input::placeholder,
+.form-itemBox textarea::placeholder {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.form-itemBox input:focus,
+.form-itemBox textarea:focus {
+  background-color: #fff;
+}
+
+.form-itemBox input:focus::placeholder,
+.form-itemBox textarea:focus::placeholder {
+  color: #000;
+}
+
+.check-itemBox {
+  width: 90%;
+  margin: 0px auto;
+  padding-bottom: 2rem;
+}
+
+.check-itemBox span {
+  font-size: 1.7rem;
+  margin-left: 1rem;
+}
+
+/* FOOTER START */
+footer {
+  background-color: var(--primary-color);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.footer-socialIcon a span {
+  font-size: 1.6rem;
+  margin-inline: 0.5rem;
+  transition: 0.3s ease;
+}
+
+.footer-socialIcon a span:hover {
+  color: #000 !important;
+}
+
+footer p a {
+  transition: 0.1ms ease-in;
+}
+
+footer p a:hover {
+  color: #000 !important;
+  text-decoration: underline !important;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .custom-ul{
+    position: fixed;
+    top: 0;
+    background: #363636;
+    border-color: #363636;
+    width: 300px;
+    right:-300px;
+    height: 100vh;
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+  }
+  .slideActive{
+    right:0px !important;
+  }
+
+  #openBtn, #closeBtn{
+    display: block;
+    cursor: pointer;
+  }
+
+  #closeBtn{
+    text-align: right;
+    margin-bottom: 4rem;
+    color:#fff;
+  }
+
+  #closeBtn span{
+    margin: 13px 13px 0px 0px;
+    line-height: 42px;
+  }
+
+  .custom-ul li:not(:first-child){
+    display: block;
+    border-top: 1px solid rgba(255,255,255,.03);
+  }
+
+  .custom-ul li a.nav-link{
+    padding: 1.1rem 0.5rem 1rem 2rem;
+  }
+
+  .custom-ulSocial-icon{
+    display: block;
+    border-top: 1px solid rgba(255,255,255,.03);
+  }
+
+  .banner-leftBox h1.title {
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 8rem;
+  }
+
+  .banner-rightBox {
+    width: 53%;
+  }
+
+  .banner-bottomLeft {
+    padding-bottom: 4rem;
+  }
+
+  .goal-card {
+    margin-bottom: 3rem;
+  }
+
+  .about-text {
+    padding-top: 0rem;
+    width: 80%;
+  }
+
+  .about-progressBox {
+    padding-top: 5rem;
+  }
+
+  .about-iconBox {
+    padding-top: 5rem;
+    width: 311px;
+  }
+
+  .Cards-Wrapper .card-box {
+    margin-bottom: 3rem;
+  }
+
+  .opinion-testimonialBox {
+    width: 80%;
+    margin: 3rem auto 0rem;
+  }
+
+  .opinion-boxLeft {
+    text-align: center;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+  }
+
+  .opinion-boxLeft p {
+    width: 100%;
+  }
+
+  .client-box,
+  .client-logo {
+    margin-bottom: 5rem;
+  }
+
+  .pricing-box {
+    margin-top: 3rem;
+  }
+
+  .plan-card-container {
+    padding-top: 15rem;
+  }
+
+  form {
+    padding-top: 6rem;
+    width: 64%;
+  }
+
+  .form-content {
+    padding-top: 0rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h2,
+  h2 span {
+    font-size: 5rem !important;
+  }
+
+  .banner-leftBox h1.title {
+    width: 90%;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .banner-rightBox {
+    position: static;
+    padding-top: 3rem;
+  }
+
+  .Goal-Wrapper {
+    padding-top: 4rem;
+  }
+
+  .goal-content-head h2.title {
+    width: 100%;
+    margin-bottom: 0px;
+    line-height: 7.7rem;
+  }
+
+  .effects-head h2.title {
+    text-align: center;
+  }
+
+  .effects-head h4.title {
+    width: 39%;
+  }
+
+  .effects-bottom p {
+    padding-right: 8rem;
+  }
+
+  .Clients-Wrapper {
+    padding-block: 7rem;
+  }
+
+  .client-cards-container {
+    padding-top: 7rem;
+  }
+
+  .faq-imgBox {
+    background-image: none;
+    padding-block: 26rem;
+  }
+
+  .media-imgBox {
+    background-image: url("../Images/personaltrainer3-section-bg4a.webp");
+    background-position: center;
+  }
+
+  .faq-content {
+    width: 50%;
+  }
+
+  .faq-container {
+    padding-block: 5rem;
+  }
+
+  .faq-content h2.title {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .goal-content-head {
+    text-align: center;
+  }
+
+  .opinion-testimonialBox {
+    width: 90%;
+  }
+
+  .pricing-header h2.title {
+    font-size: 2.2rem !important;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .my-container {
+    padding-inline: 6rem;
+  }
+
+  #logo-box a {
+    width: 62%;
+  }
+
+  .custom-navbar {
+    width: 220px;
+  }
+
+  .custom-toggle {
+    right: 5.3rem;
+    top: 1.3rem;
+  }
+
+  .banner-leftBox {
+    text-align: center;
+  }
+
+  .banner-leftBox h1.title {
+    width: 100%;
+  }
+
+  .banner-rightBox {
+    width: 100%;
+  }
+
+  .banner-rightBox figure,
+  .banner-rightBox p {
+    text-align: center;
+  }
+
+  .banner-topContent {
+    padding-bottom: 2rem;
+  }
+
+  .banner-bottomContent {
+    border: none;
+    padding-top: 0rem;
+  }
+
+  .banner-bottomLeft {
+    text-align: center;
+  }
+
+  .banner-bottomLeft p {
+    display: none;
+  }
+
+  .banner-bottomLeft .my-btn {
+    margin-top: 0rem;
+  }
+
+  .goal-content-head span {
+    display: block;
+  }
+
+  .goal-content-head h2.title {
+    line-height: 5.7rem;
+  }
+
+  .goal-cardContent h3.title {
+    font-size: 3rem !important;
+  }
+
+  .goal-cardContent h4.title {
+    font-size: 2rem;
+  }
+
+  .opinion-testimonialBox {
+    width: 100%;
+  }
+
+  .client-cards-container {
+    padding-top: 4rem;
+  }
+
+  .Clients-Wrapper h2.title {
+    text-align: center;
+  }
+
+  .client-logo .figure1 img {
+    width: 155px;
+  }
+
+  .client-logo .figure1 {
+    text-align: center;
+  }
+
+  .client-box h4.title {
+    text-align: center;
+    width: 100%;
+  }
+
+  .client-box p {
+    text-align: center;
+  }
+
+  .Plan-Wrapper h2.title {
+    text-align: center;
+  }
+
+  .plan-card-container {
+    padding-top: 3rem;
+  }
+
+  .pricing-box {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .pricing-header hr {
+    margin: 1rem auto;
+  }
+
+  .faq-content {
+    width: 80%;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+
+  .contact-details h3.title {
+    font-size: 3rem;
+  }
+
+  .contact-details {
+    text-align: center;
+  }
+
+  .address-box {
+    flex-direction: column;
+    padding-top: 2rem;
+    width: 100%;
+  }
+
+  .address-box figure {
+    width: 178px;
+    margin-bottom: 2rem;
+  }
+
+  .address,
+  .address p {
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .progressBar-box-text p {
+    font-size: 1.5rem;
+  }
+
+  .pricing-bottom ul {
+    display: block;
+    width: 60%;
+    margin-inline: auto;
+  }
+
+  .pricing-bottom ul li {
+    display: table;
+  }
+
+  .pricing-bottom ul li span.icon {
+    display: table-cell;
+  }
+
+  .pricing-bottom ul li span.text {
+    display: table-cell;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  h2,
+  h2 span {
+    font-size: 3rem !important;
+  }
+
+  .my-container {
+    padding-inline: 3rem;
+  }
+
+  #logo-Box a.navbar-brand {
+    width: 48%;
+  }
+
+  .custom-toggle {
+    right: 2.3rem;
+  }
+
+  .Banner-Wrapper {
+    padding-top: 15rem;
+  }
+
+  .banner-leftBox h1.title {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .banner-leftBox h4 {
+    font-size: 1.6rem;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text p {
+    width: 100%;
+  }
+
+  .opinion-boxLeft h3 {
+    font-size: 2.6rem;
+  }
+
+  .pricing-box {
+    width: 100%;
+  }
+
+  .progress .progress-value {
+    font-size: 1.6rem;
+    line-height: 100px;
+  }
+
+  .media-direction {
+    flex-direction: column;
+  }
+
+  .progressBar-box {
+    width: 70%;
+    margin: 1rem auto 0rem;
+  }
+
+  .progress {
+    width: 100px;
+    height: 100px !important;
+  }
+
+  .about-text p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .About-Wrapper {
+    margin-top: 7rem;
+  }
+
+  .about-progressBox {
+    padding-top: 2rem;
+  }
+
+  .about-iconBox {
+    margin: 0px auto;
+  }
+
+  .effects-head h4.title {
+    width: 100%;
+    font-size: 1.3rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
+  }
+
+  .effects-head h3 {
+    font-size: 2rem;
+  }
+
+  .effects-head {
+    padding-inline: 3rem;
+  }
+
+  .effects-head h2 {
+    font-size: 2.3rem;
+  }
+
+  .Opinion-Wrapper {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .my-container {
+    padding-inline: 2rem;
+  }
+
+  .effects-head {
+    padding-block: 16rem;
+  }
+
+  .faq-content {
+    width: 90%;
+  }
+
+  .faq-textBox {
+    padding: 2rem 3rem 2rem 4rem;
+  }
+
+  .faq-textBox h5 {
+    font-size: 1.1rem;
+  }
+
+  .contact-details h3.title {
+    font-size: 1.7rem;
+  }
+
+  form {
+    padding-top: 4rem;
+  }
+
+  form h4 {
+    font-size: 1.5rem;
+  }
+
+  .opinion-boxLeft {
+    padding-bottom: 0rem;
+  }
+
+  .opinion-boxLeft h3 {
+    font-size: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .opinion-boxLeft p {
+    font-size: 1.1rem;
+  }
+
+  .opinion-testimonialBox {
+    padding: 0rem 1rem 1rem;
+  }
+
+  .opinion-testimonialBox p {
+    line-height: 1.7rem;
+    padding-block: 1.3rem !important;
+    font-size: 1.3rem;
+  }
+
+  .opinion-testimonialBox h4 {
+    font-size: 1.4rem;
+  }
+
+  .opinion-testimonialBox h5.title {
+    font-size: 1.2rem;
+    padding-top: 0rem !important;
+  }
+
+  .goal-card {
+    padding-top: 6rem;
+  }
+
+  .effects-bottom p {
+    padding-inline: 2rem;
+    font-size: 1rem;
+  }
+
+  .effects-head {
+    padding: 3rem 1rem 0rem;
+  }
+
+  .effects-head h2.title {
+    font-size: 1.8rem !important;
+  }
+
+  .effects-head span {
+    font-size: 1.8rem !important;
+  }
+
+  .about-iconBox {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .about-linksBox {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  .goal-cardContent h3.title {
+    font-size: 1.4rem !important;
+  }
+
+  .goal-cardContent h4.title {
+    font-size: 1.2rem;
+  }
+
+  .opinion-testimonialBox {
+    width: 100%;
+    padding-block: 1rem;
+  }
+
+  .progressBar-box {
+    width: 100%;
+    padding-block: 1rem;
+  }
+
+  .Cards-Wrapper .card-box {
+    padding-inline: 2rem;
+  }
+
+  .card-box h4 {
+    font-size: 1.7rem;
+    line-height: 1.6rem;
+    padding-top: 1.2rem !important;
+  }
+
+  .card-box p {
+    font-size: 1.3rem;
+  }
+
+  .goal-content-head h2.title {
+    line-height: 3.7rem;
+  }
+
+  .goal-card {
+    border-radius: 1.3rem;
+  }
+
+  .pricing-box {
+    padding-inline: 1rem;
+  }
+
+  .pricing-header h2.title {
+    font-size: 2rem !important;
+  }
+
+  .price span {
+    font-size: 3rem;
+  }
+
+  .price .currency {
+    font-size: 2rem !important;
+    margin-right: 0rem !important;
+  }
+
+  .my-btn {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+}
